@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title> WEBSITE </title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="" class="logo">
+            <div class="header-text">
+                <h1> The purpose is to heal. </h1>
+                <span class="square"></span>
+                <p> Dead! </p>
+                <button class="common-btn"> Read more. </button> <br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div>
+            </div>
+</div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+        <li><a href="#header"> HOME </a></li>
+        <li><a href="#about"> ABOUT US </a></li>
+        <li><a href="#features"> FEATURES </a></li>
+        <li><a href="#examples"> EXAMPLES </a></li>
+        <li><a href="#reviews"> REVIEWS </a></li>
+        <li><a href="#contact"> CONTACT </a></li>
+        </ul>
+    </nav>
+    <img src = "images/pic-3.png" id="menuBtn">
+
+
+    <!--about-->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1> About Us </h1>
+                <span class="square"></span>
+                <p> Lorem Ipsum </p> <br> <br>
+
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div> <br> 
+                <h2> Thought </h2>
+                <h3> thought by </h3>
+            </div>
+        </div>
+    </section>
+
+    <!--queries-->
+
+    <section id="queries">
+        <div class="container queries-col">
+            <div class="queries-left-col">
+                <h1> Queries </h1>
+                <form>
+                    <input type="text" placeholder="Just say it out. Okay !">
+                    <div class="btn-box">
+                    <button class="common-btn"> Glad! You did it. </button>  
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--examples-->
+
+    <section id="examples">
+        <div class="container examples-row">
+            <div class="examples-left-col">
+                <div class="examples-text">
+                <h1> Lorem Ipsum </h1>
+                <span class="square"></span>
+                <p> bvfhr67tjn </p> <br> 
+                <button class="common-btn"> View all. </button> <br> <br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div>
+            </div>
+        </div>
+            <div class="examples-right-col">
+                <img src="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+               sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 1000,
+        speedAsDuration: true
+        });
+    </script>
+</body>
+</html>
